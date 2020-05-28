@@ -3,12 +3,18 @@
     opacity: 75%;
     position: relative;
     width: 100%;
-    height: 78.6%;
+    height: 78.2%;
 }
 
 .image-content {
     position: absolute;
-    top: 5px;
+    top: 10px;
+}
+
+.image-content1 {
+    position: absolute;
+    top: 10px;
+    left: 10%;
 }
 
 .icon {
@@ -16,4 +22,12 @@
     height: 30px;
     border: 1px solid magenta;
     border-radius: 15px;
+}
+
+.contact-details {
+    margin-top: 1px;
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 11px;
 }
