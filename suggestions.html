@@ -1,7 +1,7 @@
 <html>
 	<head>
         <!-- title -->
-        <title>Sarthak Gupta</title>
+        <title>Suggestions</title>
         
         <!-- link for css -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -20,6 +20,7 @@
             function alertFunction() {
                 alert("This will reset the form completely")
             }
+
             function submitFunction() {
                 alert("Thank you for your valuable feedbacck")
             }
@@ -54,7 +55,7 @@
                         </li>
 
                         <li class="nav-item active">
-                            <a class="nav-link" href="suggestions.html">Your suggestions</a>
+                            <a class="nav-link" href="suggestions.html">Suggestions</a>
                         </li>
                         
                         <li class="nav-item dropdown">
@@ -73,6 +74,45 @@
                                 <a class="dropdown-item" href="https://github.com/sg45905" target="_blank">My Github Profile</a>
                             </div>
                         </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Social Handles
+                            </a>
+                            
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://wa.me/9407030722" target="_blank">
+                                    <img src="images/social/whatsapp.jpg" class="icon">
+                                    +91 9407030722
+                                </a>
+                                
+                                <a class="dropdown-item" href="https://www.facebook.com/sg45905/" target="_blank">
+                                    <img src="images/social/facebook.jpg" class="icon">
+                                    Sarthak Gupta
+                                </a>
+                                
+                                <a class="dropdown-item" href="https://instagram.com/sg.2906/" target="_blank">
+                                    <img src="images/social/instagram.jpg" class="icon">
+                                    @sg.2906
+                                </a>
+                                
+                                <a class="dropdown-item" href="https://www.linkedin.com/in/sarthak-gupta-3a6b9b153/" target="_blank">
+                                    <img src="images/social/linkedin.jpg" class="icon">
+                                    Sarthak Gupta
+                                </a>
+                                
+                                <a class="dropdown-item" href="https://github.com/sg45905" target="_blank">
+                                    <img src="images/social/github.jpg" class="icon">
+                                    /sg45905
+                                </a>
+                                
+                                <div class="dropdown-divider"></div>
+                                
+                                <a class="dropdown-item" target="_blank">
+                                    Sarthak Gupta &copy; 2020
+                                </a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -80,81 +120,43 @@
 
         <!-- body section -->
         <div class="container-fluid">
-            <div class="image">
-                <img src="images/contactpage.jpg" alt="Contact Me" style="width: 100%; height: 100%; opacity: 20%;">
-                <div class="image-content1">
-                    <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="images/suggestions.jpg" class="img-fluid" style="opacity: 25%;" alt="Suggestions Page">
+
+                    <div class="image-content">
                         <div class="row mx-auto my-auto">
-                            <div class="col-12 mx-auto">
+                            <div class="col-10 col-sm-12 mx-auto">
                                 <form action="mailto:sg45905@gmail.com" method="POST" enctype="text/plain">
                                     <div class="form-group">
                                         Your Full name - 
                                         <input type="text" class="form-control" name="name">
                                     </div>
-                                    
+                            
                                     <div class="form-group">
                                         Your e-mail address - 
                                         <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
-                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        
+                                        <small id="emailHelp" class="form-text text-muted">
+                                            I'll never share your email with anyone else.
+                                        </small>
                                     </div>
-                                    
+                            
                                     <div class="form-group">
                                         Your valuable suggestion - 
                                         <textarea class="form-control" name="suggestions" aria-describedby="suggestHelp"></textarea>
-                                        <small id="suggestHelp" class="form-text text-muted">Please try to keep it under the word limits of 500 words, Thnk you</small>
+                                        
+                                        <small id="suggestHelp" class="form-text text-muted">
+                                            Please be as precise as you can, it'll be much easier for me. Thank you....
+                                        </small>
                                     </div>
-                                    
+                            
                                     <button type="submit" class="btn btn-success" onsubmit=submitFunction()>Submit</button>
                                     <button type="reset" class="btn btn-warning" onclick=alertFunction()>Reset</button>
                                 </form>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- footer section -->
-        <div class="navbar navbar-expand-lg navbar-dark bg-dark mt-3">
-            <div class="container">
-                <a class="navbar-brand" href="#">Sarthak Gupta &copy; 2020</a>
-                
-                <!-- toggle button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentFooter" aria-controls="navbarSupportedContentFooter" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- navbar list -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContentFooter">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.facebook.com/sg45905/" target="_blank">
-                                <img src="images/facebook.jpg" class="icon">
-                                Sarthak Gupta
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="nav-link" href="https://www.instagram.com/sg.2906/" target="_blank">
-                                <img src="images/instagram.jpg" class="icon">
-                                @sg.2906
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="nav-link" href="https://www.linkedin.com/in/sarthak-gupta-3a6b9b153/" target="_blank">
-                                <img src="images/linkedin.jpg" class="icon">
-                                Sarthak Gupta
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a class="nav-link" href="https://github.com/sg45905" target="_blank">
-                                <img src="images/github.jpg" class="icon">
-                                sg45905
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
