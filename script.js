@@ -1,5 +1,6 @@
 $(document).ready(
     function(){
+        // when menu opens
         $(".menu-icon").click(
             function(){
                 $("nav div").css("display", "block");
@@ -8,6 +9,7 @@ $(document).ready(
             }
         );
         
+        // when menu closes
         $(".menu-close-icon").click(
             function(){
                 $("nav div").hide();
@@ -16,6 +18,7 @@ $(document).ready(
             }
         );
         
+        // animate when menu closes
         $('nav div a').on(
             'click',
 
