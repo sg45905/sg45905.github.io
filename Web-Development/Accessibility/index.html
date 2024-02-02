@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="This Webpage is developed by Sarthak Gupta for the sole purpose of teaching Accessibility" />
+
+        <title> Accessibility </title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header>
+            <img id="logo" src="../../images/Accessibility/logo.svg" alt="logo-image" />
+
+            <h1> HTML / CSS Quiz </h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#std-info"  accesskey="i"> INFO </a>
+                    </li>
+
+                    <li>
+                        <a href="#html-section" accesskey="h"> HTML </a>
+                    </li>
+
+                    <li>
+                        <a href="#css-section" accesskey="c"> CSS </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <form action="action_page.html" method="post">
+                <section role="region" aria-labelledby="std-info">
+                    <h2 id="std-info"> Student's Information </h2>
+
+                    <div class="info">
+                        <label for="name"> Name: </label>
+                        <input id="name" name="name" type="text" />
+                    </div>
+
+                    <div class="info">
+                        <label for="eml"> Email: </label>
+                        <input id="eml" name="email" type="email" />
+                    </div>
+
+                    <div class="info">
+                        <label for="dob">
+                            D.O.B.:
+
+                            <span class="sr-only"> (Date of Birth) </span>
+                        </label>
+                        <input id="dob" name="date-of-birth" type="date" />
+                    </div>
+                </section>
+
+                <section role="region" aria-labelledby="html-section">
+                    <h2 id="html-section"> HTML Questions </h2>
+
+                    <div class="que-block">
+                        <p> 1 </p>
+                        
+                        <fieldset class="que" name="html-que-1">
+                            <legend> A paired tag needs to be closed at the end... </legend>
+
+                            <ul class="ans-list">
+                                <li>
+                                    <label for="que-1-ans-1">
+                                        <input id="que-1-ans-1" name="html-q1" type="radio" value="true" />
+
+                                        True
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label for="que-1-ans-2">
+                                        <input id="que-1-ans-2" name="html-q1" type="radio" value="false" />
+
+                                        False
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+
+                    <div class="que-block">
+                        <p> 2 </p>
+                        
+                        <fieldset class="que" name="html-que-2">
+                            <legend> HTML is case-sensitive language... </legend>
+                            
+                            <ul class="ans-list">
+                                <li>
+                                    <label for="que-2-ans-1">
+                                        <input id="que-2-ans-1" name="html-q2" type="radio" value="true" />
+
+                                        True
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="que-2-ans-2">
+                                        <input id="que-2-ans-2" name="html-q2" type="radio" value="false" />
+
+                                        False
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </section>
+
+                <section role="region" aria-labelledby="css-section">
+                    <h2 id="css-section"> CSS Questions </h2>
+
+                    <div class="f-row">
+                        <div class="que-block">
+                            <label for="q1"> The rel attribute specifies a relationship between the current document and another document, such as a style sheet. </label>
+                        </div>
+
+                        <div class="ans">
+                            <select id="q1" name="css-q1" required>
+                                <option value=""> Select an answer </option>
+                                <option value="yes"> Yes </option>
+                                <option value="no"> No </option>
+                            </select>
+                        </div>
+                        
+                        <div class="que-block">
+                            <label for="q2"> What is the correct CSS syntax to change the font name? </label>
+                        </div>
+
+                        <div class="ans">
+                            <textarea id="q2" name="css-q2" rows="2" cols="20" placeholder="Enter Your Answer Here"> </textarea>
+                        </div>
+                    </div>
+                </section>
+
+                <button type="submit"> Submit </button>
+            </form>
+        </main>
+
+        <footer>
+            <address>
+                No Copyright - <a href="https://sg45905.github.io"> &#64;Sarthak Gupta </a> <br />
+                Indore <br />
+                Madhya Pradesh <br />
+                India
+            </address>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <!-- head section -->
+    <head>
+        <meta charset="UTF-8">
+        <title> Dog Center's App </title>
+    </head>
+
+    <body>
+        <main>
+            <h1> Doggo Center </h1>
+            
+            <!-- main section -->
+            <section>
+                <h2> Our dogs </h2>
+                
+                <p>
+                    More of our dogs can be seen in
+                    
+                    <a href="https://sg45905.github.io" target="_blank"> display </a>
+                </p>
+
+                <a href="https://sg45905.github.io" target="_blank">
+                    <img src="../../images/HTML/sit-dog.png" alt="A Dog Sitting in the Park">
+                </a>
+            </section>
+
+            <!-- lists section -->
+            <section>
+                <h2> Dogs - Likes and Dislikes </h2>
+
+                <h3> What Dogs Love To Do? </h3>
+
+                <ul>
+                    <li> Eat </li>
+                    <li> Sleep </li>
+                    <li> Repeat </li>
+                </ul>
+
+                <figure>
+                    <img src="../../images/HTML/slp-dog.png" alt="A Sleeping Dog">
+
+                    <figcaption>
+                        Dogs love to 
+                        
+                        <em> sleep </em>
+                    </figcaption>
+                </figure>
+
+                <h3> What Dogs Hate? </h3>
+
+                <ol>
+                    <li> Bath </li>
+                    <li> Strange Visitors </li>
+                    <li> Visit to Pet Clinic </li>
+                </ol>
+
+                <figure>
+                    <img src="../../images/HTML/bth-dog.png" alt="A Bathing Dog">
+                    
+                    <figcaption>
+                        Dogs hate
+    
+                        <strong> bathing </strong>
+                        
+                        too much
+                    </figcaption>
+                </figure>
+            </section>
+
+            <!-- forms section -->
+            <section>
+                <h2> Dogs Information Form </h2>
+                
+                <form action="action_page.html"> 
+                    <fieldset>
+                        <legend> What's the breed of dog you have? </legend>
+                        
+                        <label>
+                            <input id="husky" name="breed" type="radio" value="husky" checked> Husky
+                        </label>
+
+                        <label>
+                            <input id="german-shephard" name="breed" type="radio" value="german-shephard"> German Shephard
+                        </label>
+                        
+                        <label>
+                            <input id="pug" name="breed" type="radio" value="pug"> Pug
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend> What's your dog's favourite food? </legend>
+
+                        <input id="bananas" type="checkbox" name="food" value="bananas" checked>
+                        <label for="bananas"> Bananas </label>
+
+                        <input id="carrots" type="checkbox" name="food" value="carrots">
+                        <label for="carrots"> Carrots </label>
+
+                        <input id="eggs" type="checkbox" name="food" value="eggs">
+                        <label for="eggs"> Eggs </label>
+                    </fieldset>
+
+                    <input type="text" name="dog-url" placeholder="URL of the photo to be uploaded" required>
+
+                    <button type="submit"> Submit </button>
+                </form>
+            </section>
+        </main>
+
+        <!-- footer section -->
+        <footer>
+            <p>
+                No Copyright - &#64;
+                <a href="https://sg45905.github.io"> Sarthak Gupta </a>
+            </p>
+        </footer>
+    </body>
+</html>

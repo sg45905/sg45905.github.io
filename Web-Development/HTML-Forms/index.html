@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title> HTML Forms (Registration) </title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1> Registration Form </h1>
+
+        <p> Please fill out the following form with all the required information </p>
+
+        <form action="action_page.html" method="post">
+            <fieldset>
+                <label for="fname">
+                    First Name: <input type="text" name="fname" id="fname" required>
+                </label>
+                
+                <label for="lname">
+                    Last Name: <input type="text" name="lname" id="lname" required>
+                </label>
+                
+                <label for="eml">
+                    Email Id: <input type="email" name="eml" id="eml" required>
+                </label>
+                
+                <label for="pswd">
+                    Your Password: <input type="password" name="pswd" id="pswd" pattern="[A-Za-z0-9]{8,}" required>
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend> Account Type (required) </legend>
+
+                <label for="prsnl-act">
+                    <input type="radio" name="act-type" id="prsnl-act" class="inline" checked> Personal
+                </label>
+                <label for="bsns-act">
+                    <input type="radio" name="act-type" id="bsns-act" class="inline"> Busineess
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <label for="prfl-pic">
+                    Upload your picture: <input type="file" name="prfl-pic" id="prfl-pic">
+                </label>
+
+                <label for="age">
+                    Enter your age (in Years): <input type="number" name="age" id="age" min="13" max="120">
+                </label>
+
+                <label for="referral">
+                    From where did you hear about us?
+                    <select name="referral" id="referral">
+                        <option value=""> (select one) </option>
+                        <option value="1"> Personal Portfolio </option>
+                        <option value="2"> Freelancer Website </option>
+                        <option value="3"> Youtube Channel </option>
+                        <option value="4"> Other </option>
+                    </select>
+                </label>
+
+                <label for="bio">
+                    Write your bio here:
+                    <textarea name="bio" id="bio" rows="3" cols="30" placeholder="Write whatever you like to tell about yourself..."> </textarea>
+                </label>
+            </fieldset>
+
+            <label for="trms-cndn">
+                <input type="checkbox" name="trms-cndn" id="trms-cndn" class="inline" required>
+                I accept the <a href="https://sg45905.github.io">terms and conditions</a>
+            </label>
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
